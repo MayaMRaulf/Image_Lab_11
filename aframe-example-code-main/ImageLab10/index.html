@@ -4,14 +4,21 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
   </head>
   <body>
-    <a-scene>
-        <a-cone
+      <!-- Scoop -->
+      <a-sphere
+        position="-2 2.2 -3"
+        radius="0.8"
+        color="pink">
+      </a-sphere>
+
+      <!-- Cone -->
+      <a-cone
         src="Assets/cone.jpeg"
         height="2"
-        radius-bottom="0"
+        radius-bottom="0.1"
         radius-top="0.7"
         position="-2 1 -3"
-        rotation="0 180 0">
+        rotation="180 0 0">
       </a-cone>
       
       <a-sphere position="0 1.25 5" radius="1.25" color="#Yellow"></a-sphere>
