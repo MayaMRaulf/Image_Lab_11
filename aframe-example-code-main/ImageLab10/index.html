@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
   <body>
+
     <a-scene>
 
       <!-- Scoop -->
@@ -17,16 +18,18 @@
       <a-cone
         src="Assets/cone.jpeg"
         height="2"
-        radius-bottom="0.1"
-        radius-top="0.7"
+        radius-top="0"
+        radius-bottom="0.7"
         position="-2 1 -3"
         rotation="180 0 0">
       </a-cone>
       
-      <a-sphere position="0 1.25 5" radius="1.25" color="#Yellow"></a-sphere>
+      <a-sphere position="0 1.25 5" radius="1.25" color="yellow"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky src="Assets/unrealworld.edit.jpg"></a-sky>
+
     </a-scene>
+
   </body>
 </html>
