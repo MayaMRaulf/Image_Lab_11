@@ -8,7 +8,7 @@
     <img id="Background" src="Assets/Space_360_Edited_PS.jpg">
 
     <a-asset-item id="teapot" src="Assets/Teapot_Square_White.obj"></a-asset-item>
-    <img id="TeapotTexture1" src="Assets/teapot_texture.jpeg">
+    <img id="TeapotTexture1" src="Assets/TeaPotTextureFinal.jpeg">
 
     <a-asset-item id="teacup1" src="Assets/cup_green_obj.obj"></a-asset-item>
     <img id="TeaCupTexture1" src="Assets/TeaCupTexture1.jpeg">
@@ -19,47 +19,56 @@
     <a-asset-item id="teacup3" src="Assets/cup_green_obj.obj"></a-asset-item>
     <img id="TeaCupTexture3" src="Assets/TeaCupTexture3.jpeg">
 
+    <a-asset-item id="teacup4" src="Assets/cup_green_obj.obj"></a-asset-item>
+    <img id="TeaCupTexture4" src="Assets/TeaCuoTexture4.jpeg">
+
   </a-assets>
     <a-scene>
 
-      <!-- TEAPOT -->
-      <a-entity 
-        obj-model="obj: #teapot"
-        position="-1 0.5 -3"
-        scale="8 8 8"
-        material="src: #TeapotTexture1">
-      </a-entity>
+<!-- TEAPOT (center) -->
+<a-entity 
+  obj-model="obj: #teapot"
+  position="0 0.5 -3"
+  scale="7 7 7"
+  material="src: #TeapotTexture1">
+</a-entity>
 
-      <!-- TEACUP 1 -->
-      <a-entity 
-        obj-model="obj: #teacup1"
-        position="0.2 0.75 -2.3"
-        scale="0.05 0.05 0.05"
-        material="src: #TeaCupTexture1">
-      </a-entity>
-      
-       <!-- TEACUP 2 -->
-      <a-entity 
-        obj-model="obj: #teacup2"
-        position="1.5 0.75 -2.3"
-        scale="0.05 0.05 0.05"
-        rotation="0 180 0"
-        material="src: #TeaCupTexture2">
-      </a-entity>
+<!-- TEACUP 1 — front-left -->
+<a-entity 
+  obj-model="obj: #teacup1"
+  position="-1.5 0.75 -2"
+  rotation="0 45 0"
+  scale="0.05 0.05 0.05"
+  material="src: #TeaCupTexture1">
+</a-entity>
 
-       </a-entity>
+<!-- TEACUP 2 — front-right -->
+<a-entity 
+  obj-model="obj: #teacup2"
+  position="1.5 0.75 -2"
+  rotation="0 135 0"
+  scale="0.05 0.05 0.05"
+  material="src: #TeaCupTexture2">
+</a-entity>
 
-      <!-- TEACUP 3 -->
-      <a-entity 
-        obj-model="obj: #teacup3"
-        position="1.8 0.75 -2.3"
-        scale="0.05 0.05 0.05"
-        material="src: #TeaCupTexture3">
-      </a-entity>
+<!-- TEACUP 3 — back-left -->
+<a-entity 
+  obj-model="obj: #teacup3"
+  position="-1.5 0.75 -4"
+  rotation="0 -45 0"
+  scale="0.05 0.05 0.05"
+  material="src: #TeaCupTexture3">
+</a-entity>
 
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
- 
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+<!-- TEACUP 4 — back-right -->
+<a-entity 
+  obj-model="obj: #teacup4"
+  position="1.5 0.75 -4"
+  rotation="0 225 0"
+  scale="0.05 0.05 0.05"
+  material="src: #TeaCupTexture4">
+</a-entity>
+
       <a-sky src="#Background"></a-sky>
     </a-scene>
   </body>
